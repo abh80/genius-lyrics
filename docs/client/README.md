@@ -69,7 +69,7 @@ console.log(Genius.version)
 
 ## Methods
 
-### fetcher
+### fetcher (below v3)
 
 Usage: `.fetcher(endpoint)`
 
@@ -79,7 +79,7 @@ Fetches the Endpoint
 
 Parameter | Type | Description
 ----------|------|------------
-`endpoint` | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Fetches using *node-fetch*. Refer [this](https://docs.genius.com/)
+`endpoint` | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Fetches using *axios*. Refer [this](https://docs.genius.com/)
 
 Returns: [Promise { pending }](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Promise)
 

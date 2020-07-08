@@ -1,6 +1,6 @@
 ### Based on `.then`
 ```js
-const Genius = new (require("genius-lyrics"))("your-token-here");
+const Genius = new (require("genius-lyrics")).Client("your-token-here");
 
 Genius.artists.get("653414")
 .then(artist => {
@@ -11,7 +11,7 @@ Genius.artists.get("653414")
 
 ### Based on `Async/Await`
 ```js
-const Genius = new (require("genius-lyrics"))("your-token-here");
+const Genius = new (require("genius-lyrics")).Client("your-token-here");
 
 async function getArtist() {
      try {

@@ -19,8 +19,8 @@ const Genius = new (require("genius-lyrics"))("your-token-here");
 
 async function lyrics() {
      try {
-          const song = await Genius.tracks.search("faded")[0];
-          const lyrics = await song.lyrics();
+          const songs = await Genius.tracks.search("faded");
+          const lyrics = await songs[0].lyrics();
           console.log(lyrics);
      } catch(e) {
           console.log(e);
